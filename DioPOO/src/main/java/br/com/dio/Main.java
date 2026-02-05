@@ -1,5 +1,6 @@
 package br.com.dio;
 
+import br.com.dio.dominio.Conteudo;
 import br.com.dio.dominio.Curso;
 import br.com.dio.dominio.Mentoria;
 
@@ -16,6 +17,10 @@ public class Main {
         curso2.setDescricao("Descrição do curso C#");
         curso2.setCargaHoraria(10);
 
+        Conteudo conteudo = new Curso();
+        conteudo.setTitulo("Curso Python");
+        conteudo.setDescricao("Descrição do curso Python");
+
         Mentoria mentoria1 = new Mentoria();
         mentoria1.setTitulo("Mentoria de Java");
         mentoria1.setDescricao("Descrição da mentoria de Java");
@@ -24,5 +29,6 @@ public class Main {
         System.out.println(curso1);
         System.out.println(mentoria1);
         System.out.println(curso2);
+        System.out.println(conteudo);
     }
 }
